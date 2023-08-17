@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="Style_citas.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>AGENDAR CITA</title>
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span class="logo" style="color: white;">BRIODN</span>
+            <ul>
+                <a href="Index.html"> <li style="color: white;">INICIO</li></a>
+               <a href="Citas.html"> <li style="color: white;">CITAS</li></a>
+               <a href="Ubicación.html"> <li style="color: white;">UBICACIÓN</li></a>
+                <a href="PlanDeTratamiento.html"><li style="color: white;">PLAN DE TRATAMIENTO</li></a>
+               <a href="Costos.html"> <li style="color: white;">COSTOS</li></a>
+                <a href="registrar.html"><li style="color: white;">REGISTRATE</li></a>
+                <a href="iniciar.html"><li style="color: white;">INICIA SESIÓN</li></a>
+            </ul>
+        </nav>
+    
+    <form action="registrar_paciente.php" method="post">
+        <label for="nombre">Introduce tu Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Introduce tu Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="email">Introduce tu Correo</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="telefono">Introduce tu Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+        <br>
+        <label  for="Fecha">Escoje la Fecha:</label>
+        <input  type="datetime-local" id="Fecha" name="Fecha">
+        <br>
+        <center>
+        <input  type="submit" value="Registrar paciente">
+        </center>
+    </form>
+</body>
+</html>
