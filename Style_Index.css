@@ -138,26 +138,26 @@
   }
 
   
-  .box 
+  .bax
   {
     width: 500px;
     background: rgba(245, 218, 237, 0.4);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     margin: 60%;
     margin-top: 4%;
     color: white;
     font-family: 'Share Tech', sans-serif;
     border-radius: 15px;
-    box-shadow: 7px 13px 37px rgb(255, 112, 112); 
+    box-shadow: 7px 13px 37px #000000; 
   }
   
-  .box-img 
+  .bax-img 
   {
     border-radius: 50%;
   }
   
-  .box h1 
+  .bax h1 
   {
     font-size: 40px;
     letter-spacing: 4px;
@@ -165,7 +165,7 @@
     margin: 30px 0 20px;
   }
   
-  .box h2
+  .bax h2
    {
     font-size: 20px;
     letter-spacing: 3px;
@@ -173,22 +173,22 @@
     margin-bottom: 30px
   }
   
-  .box p 
+  .bax p 
   {
     text-align: justify;
   }
   
-  .box ul 
+  .bax ul 
   {
     margin-top: 20px;
     list-style: none;
   }
   
-  .box ul li
+  .bax ul li
    {
     display: inline-block;
   }
-  .box ul li a 
+  .bax ul li a 
   {
     color: white;
     font-size: 45px;
@@ -197,8 +197,44 @@
     display: block;
   }
   
-  .box ul li a:hover 
+  .bax ul li a:hover 
   {
     color:#b9b9b9;
     transform: scale(1.3);
   }
+  
+  .pie-pagina
+{
+    width: 100%;
+    background-color: #000000;
+}
+.pie-pagina .grupo-1
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-2
+{
+  background-color: #ffffff;
+  padding: 15px 10px;
+  text-align: center;
+  color: #000000;
+}
+.pie-pagina .grupo-2 small
+{
+  font-size: 15px;
+}
+@media screen and (max-width:800px)
+{
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
